@@ -127,7 +127,7 @@ function tn_decode(
     # evaluate success probability
     predicted_success_rate = coset_probabilities[best_coset_idx] / sum(coset_probabilities)
 
-    return correction, predicted_success_rate
+    return correction, predicted_success_rate, best_logical
 end
 
 """
