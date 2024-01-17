@@ -64,7 +64,7 @@ end
     tn_decode(
         code::TensorNetworkCode, syndrome::AbstractVector{Int}, error_probability::Real;
         contract_fn=basic_contract()
-    ) -> (Vector{Int}, Float64, Int)
+    ) -> (Vector{Int}, Float64, Int8)
 
 Return a recovery operator for the code, that is consistent with the syndrome and is from
 the most-likely logical coset. Additionally, the predicted success probability, defined as
